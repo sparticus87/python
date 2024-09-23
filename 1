@@ -1,0 +1,121 @@
+win-ops = 10.50.38.93
+lin-ops = 10.53.33.189
+cftd server = 10.50.40.84
+PYTHON NOTES
+_______________________________________
+DAY 1
+space and case sensitive
+python3
+ctrl L <-- clears
+''' comment
+math operators + - * / // %(remainder) **(power of)
+15 / 8 = 1.875
+15 // 8 = 1
+15 % 8 = 7
+...
+strings need single or double quotes
+python works inside out
+Typecasting changing one variable into another (type cast is automatic)
+...
+nano .nanorc <--- nano config file
+set tabsize 4
+set tabstospaces
+set linenumbers
+...
+type() <-- shows type of function
+...
+.format() <-- helps format text 
+print('{} {}!'.format('Hello','world'))
+...
+tuple and lists are like arrays
+...
+.append()
+.join()
+...
+.split()
+passwd.split(':')
+.........................................................................
+ email = 'name@domain.com'
+ 2 print( ' '.join(' '.join(email.split('@')).split('.')).split())
+...
+email = 'name@domain.com'
+a = email.split('@')
+b = '.'.join(a)
+C = b.split('.')
+print(c)
+#print(['name', 'domain'. 'com'])
+...
+lst = []
+ 7 a = email.split('@')
+ 8 b = a[1].split('.')
+ 9
+10 lst.append(a[0])
+11 lst.append(b[0])
+12 lst.append(b[1])
+13 print(lst)
+14
+........................................................................
+creates empty list of tuple
+tup = ()
+lst = []
+....................................................................................
+if <condition>:
+    <indented code block>
+elif <condition>:
+    <indented code block>
+elif <condition>:
+    <indented code block>
+else:
+    <indented code block>
+...
+usr = input('Pick a team: ')
+if usr == 'Cowboys' or usr == 'Bears'
+     print('The {} suck'.format(usr))
+ elif usr == 'Broncos':
+     print('the {} never make it to the playoffs'.format(usr))
+ else:
+     print('The {} are a good team'.format(usr))
+...
+ #!/usr/bin/env python3
+ num = int(input('Type a numba:\n'))
+ if num % 3 == 0 and num % 5 == 0:
+     print('fizzbizz')
+ elif num % 3 == 0:
+     print('fizz')
+ elif num % 5 == 0:
+     print('buzz')
+ else:
+     print(num)
+
+........................................................................................
+def test():
+     while True:
+         usr = input("Type 'Pass', 'Break', 'Continue', or 'Return'\n").lower()
+         if usr == 'pass':
+             pass
+             print('this is pass.')
+         elif usr == 'break':
+             break
+             print('this is break.')
+         elif usr == 'continue.':
+             continue
+             print('this is continue')
+         elif usr == 'return':
+             return 'this is return'
+         else:
+             print('please choose a valid option')
+ test()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
